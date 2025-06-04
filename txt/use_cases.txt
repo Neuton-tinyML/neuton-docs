@@ -1,0 +1,18 @@
+The Neuton platform is suitable for developing edge-ai solution in the following (not exhaustive) domains:
+- Smart Home Devices: smart speakers, thermostats, security cameras, and appliances that can benefit from on-device AI processing for faster response times and enhanced privacy.
+- Wearable Technology: smartwatches, smart rings, fitness trackers, and health monitoring devices that require efficient, real-time data processing.
+- Predictive maintenanc* solutions in machinery and equipment to detect anomalies and predict failures in real-time.
+- Healthcare: portable diagnostic devices and health monitoring tools (heart rate, oxygen levels, ECG, PPG, etc.)
+- Farming**: soil monitoring, crop health assessment, automated irrigation systems
+- Environmental Monitoring: tracking animal movements and detecting poaching activities; Air and Water Quality Monitoring
+- Smart cities: traffic management, emergency response systems
+- Retail and Commerce: smart shelves, personalized recommendations, and inventory management systems; supply chain optimization
+- Automotive: self-driving cars and other autonomous vehicles; driver-assistance systems (lane-keeping, collision avoidance, and driver monitoring)
+- Energy Management: smart grid solutions for efficient energy distribution, fault detection, and grid optimization; smart home energy management systems
+- Logistics and Transportation: package tracking and monitoring, optimization of fleet operations, including route optimization, maintenance scheduling, and fuel efficiency; tracking and monitoring of high-value assets in transit
+
+Competitors:
+- SensiML
+- Edge Impulse
+- Nano Edge AI Studio
+- Qeexo TDK

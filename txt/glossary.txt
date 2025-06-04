@@ -1,0 +1,44 @@
+Binary Classification is used to predict one of the two possible outcomes or classes (e.g. ‘yes’ or ‘no’, ‘black or ‘white’, 0 or 1). If all of the values of your target variable are represented by only two unique values, this is a binary classification task type.
+
+Classification (Classification Task) is the prediction of a target variable represented as a range of discrete classes. Binary classification tasks are represented by a target variable with two possible classes. Multi classification tasks are represented by a target variable with 3 or more classes.
+
+Dataset is a volume of data (statistics) in a tabular format.
+
+Feature (independent variable, predictor) is represented by a column in a dataset that characterizes the target variable.
+
+Feature Importance Matrix (FIM) is a chart that displays the impact of features on the model, with 1 being the most impactful.
+
+Holdout Validation Dataset is an independent portion of data that won’t be used in model training, but on which metrics will be calculated.
+
+Machine Learning (ML) is the scientific study of algorithms and statistical models that computer systems use to perform a specific task without using explicit instructions, relying on patterns and inference instead.
+
+Model is a mathematical representation of dependencies between the features (independent variables) and the target variable.
+
+Model Growth Chart presents iterations of growth and model construction on a single graph, allowing users to select and download the optimal model for their specific needs based on both model quality and model size.
+
+Model Quality Diagram is a graphical representation of model quality in relation to metric indicator values that are scaled in the range [0-1], where 1 is the ideal quality of the model, and 0 is the minimum quality of the model.
+
+Multi Classification is used to predict one value of the limited number (greater than 2) of possible outcomes (e.g. ‘red’ or ‘green’ or ‘yellow’; ‘high or ‘medium’ or ‘low’; 1 or 2 or 3 or 4 or 5, etc.) If all of the values of your target variable are represented by a discrete (fixed) number of unique values/classes (\>2), then this is a Multiclass classification task type.
+
+Neural Network is a series of algorithms that endeavors to recognize underlying relationships in a dataset through a process that is close to the way the human brain operates.
+
+Regression (regression task type) is predicting a continuous value (for example predicting the prices of a house given the house features like location, size, number of bedrooms, etc).
+
+Solution is an object in Neuton in which all model parameters are specified. All workflow actions are executed inside the solution.
+
+Target Variable is a variable the model is learning to predict. The target variable may be represented as a range of discrete classes or as continuous real numbers.
+
+TinyML is a field of study in Machine Learning and Embedded Systems that explores the types of models you can run on small, low-powered devices like microcontrollers. It enables low-latency, low-power, and low-bandwidth model inference on edge devices.
+
+Total Footprint is the amount of space in FLASH memory and SRAM that the model uses for inference.
+
+Training is the process of learning to uncover relationships between the features of a particular dataset and the target variable.
+
+Training Dataset is the input dataset (or its part) that the machine learning algorithm uses to “learn” to uncover relationships between its features and the target variable.
+
+Validation is the quality assessment process for a model which has been trained and built to predict a particular target variable.
+
+Validation Dataset is another subset of the input data used to predict the target variable with the trained model, and measure the error between the known target values in the validation dataset and the predictions.
+
+Validation Metric is a functional value that describes model quality applying to the holdout validation dataset or cross-validation process.
+

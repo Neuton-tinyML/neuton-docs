@@ -1,0 +1,36 @@
+Model Settings: Select parameters in which calculations will be performed inside the model. If you plan to optimize resource usage, choose the 8-bit coefficient storage format. With Float Datatype Support enabled, you can build models that support operations with floats. By default, the model calculation settings correspond to the type of train data you have selected. However, you can configure the calculation parameters of the model depending on the problem to be solved. For 8 and 16-bit storage of coefficients, calculations are available both in floats and in integers. For 32-bit storage – only in floats.
+
+Task type: Select the task type: Regression / Binary Classification / Multiclass Classification and the metric to measure model quality. System predetermines task type based on the dataset, but you can also specify this parameter manually. Neuton can automatically detect a task type based on the target variable values, and if the task type was selected incorrectly, Neuton will change it. The corresponding log will be written in the Logs on the neuton_development-A-23 page.
+
+Evaluation metric: The list of metrics depends on the selected task type. During the training phase, the platform will measure the validation metric at each training iteration. Neuton has a built-in patented feature to prevent overfitting (overtraining) which stops training right before overfitting starts to occur. For Binary and Multiclass classification task types, the default value of the target metric is Accuracy, for the Regression task type the default target metric is RMSE. Regardless of the target metric you have chosen, the platform will calculate all the metrics available on the platform for this type of task. Optimization metric for classification in Cross-entropy.
+
+Weights & Coefficients: BitDepth - if Frequency features are selected AND Weights & Coefficients = 32, then the system changes bit depth to 16 Quantised.
+
+Activation functions: Floating Support - if Weights & Coefficients = 32, then Activation functions are disabled and set to floating point. Neuton.ai can train models using floating point weights or fixed point weights. These settings are defined separately for model weights and activation function computations in the 'Weights & Coefficients' and 'Activation Functions' dropdown menus accordingly. For the smallest possible footprint (if you have opted in for 'Quantization aware ...' option in the 'Weights & Coefficients' dropdown) make sure to select 'Quantized Activation' in the 'Activation Function' dropdown menu.
+
+Output format: User can specify if they want to get model output in integer or in float. Model output can be presented in one of two formats: Quantized or Floating-point.
+- Quantized 8-bit: Output values are scaled from 0 to 255.
+- Quantized 16-bit: Output values are scaled from 0 to 65 535.
+- Floating-point 32-bit: Output values range from 0 to 1.
+Note: Quantized output format is available only for quantized Weights & Coefficients
+Available for classification only.
+1. if Weights & Coefficients = Floating point, then Output format is predefined with Floating-point value and disabled for editing. For "Floating-point 32 bit Probabilites" the values of probabilities will be from 0 to 1 with floating point.
+2. if Weights & Coefficients = Quantization Aware 8-bit Integer or Quantization Aware 16-bit Integer, then Output format is available for editing and predefined with Quantized value:
+   1. For "Quantization Aware 8-bit Integer" prefilled with "Quantized 8-bit Probabilites". The values of probabilities will be scaled from 0 to 255.
+   2. For "Quantization Aware 16-bit Integer" prefilled with "Quantized 16-bit Probabilites". The values of probabilities will be scaled from 0 to 65 536.
+
+Input data type specification allows you to optimize the preprocessing operation and reduce SRAM and Flash usage on the device and inference time. The data of the same type must be used for prediction. Neuton supports the following input data types: INT8, INT16, and FLOAT32. It is important to select the correct data type as incorrect selection of input data type may cause target metric degradation or total footprint increase. Select input data type according to the data type of all features in the training dataset. Keep in mind that you only need to choose one data type for the entire dataset. For example, if you have a dataset with three features and two of them are represented as INT16 while the third one is represented as FLOAT32, you should choose FLOAT32 as the data type for the entire dataset. The platform automatically determines the data type based on the logic discussed above. However, if the data type is not determined correctly, you can change it manually.
+System uses the entire dataset to determine the data type.
+8-bit Integer: The range of values in the dataset is from -128 to 127.
+16-bit Integer: The range of values in the dataset is -32 768 to 32 767.
+32-bit Floating point: At least one value in the dataset is a floating point number.
+
+Normalization type: This option allows you to select one of two scaling types for your dataset: "Unique scale for each feature" or "Unified scale for all features". For model training normalization is used, unique scaling for each feature may increase model predictive power as well as model footprint, there as unified scaling may decrease model footprint. Everything depends on your dаta: it is better to use a "Unified scale for all features" when all values are on the same scale for all features.
+
+Training stop options: Maximum Number of Coefficients - Neuton models are very small by default, but you may still limit the number of coefficients if necessary. By default, the number of coefficients is unlimited. Maximum Training Duration (hours) - For optimal use of the infrastructure, you can limit the model training time. Upon reaching the time limit during training, the platform will stop the training and save the best model. Maximum Value of Evaluation metric - Training will stop upon reaching the specified metric value. Depending on the metric, the resulting Value may be lower or higher if the model cannot achieve the specified accuracy.
+
+Target hardware: User can choose one or several types of hardware on the training pipeline page. All users can see all options. Currently, the Neuton.AI platform supports the following target hardware: Cortex M0, Cortex M4, Cortex M33, STMicro ISPU, and Microchip-8 series. If you require support for different hardware, our Enterprise plan may be a suitable option. To learn more and express your interest, please fill out the form at https://neuton.ai/contactus
+
+Start training: After the training parameters are defined click "Start training" to start the training process. Model training may take from several minutes to several hours depending on the dataset size. For your convenience, you may leave your phone number and be notified about the end of training via text messages.
+
+Guided Setup: In short - Wizard. The guided setup involves a series of questions that the user needs to answer. Based on these responses, the system automatically configures the Signal Processing settings, including windowing parameters and the list of features to extract.
