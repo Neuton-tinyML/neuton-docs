@@ -1,8 +1,0 @@
-Anomaly detection models on the Neuton.ai platform are trained in unsupervised fashion. User does not need to provide normal/abnormal data with corresponding target values. All you need to upload is the normal operational sensor data. Neuton will train a model to interpret this as normal operational mode and at inference, if sensor readings will fall out of the normal operational mode ranges, such events will be classified as abnormal.
-
-Reconstruction Accuracy measures how well the model can recreate (or ""reconstruct"") the input data. High Reconstruction Accuracy: If the reconstruction accuracy is high, it means the model was able to learn the normal patterns of the data well. Low Reconstruction Accuracy: If the reconstruction accuracy is low, the model may not have learned the data properly, or the data may have too much noise or anomalies in it.
-The closer the Reconstruction accuracy is to 1 (max score) - the higher the anomaly detection accuracy is achieved.
-
-Neuton.ai platform's interface is uniform for all the solutions. Classification/Regression task types yield multiple models during training while Anomaly Detection task type trains a single model.
-
-Anomaly Detection task types do not support adding a holdout validation dataset during training. User can validate Anomaly Detection models by predicting on data with/without anomalies using the inference_runner CLI tool and then comparing the predicted results with actual values.

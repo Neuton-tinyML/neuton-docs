@@ -1,0 +1,4 @@
+# Dataset Options
+
+## Session ID
+The Session ID column in a dataset is used to describe a time-continuous process, such as readings from sensors over time. It helps in separating different sessions or instances within the dataset, allowing for more precise and concise model creation. Including a Session ID column can enhance the model's accuracy by providing context about the sequence of data points. While it's not mandatory to specify a Session ID column, doing so can be beneficial if your dataset involves time-series data or processes that need to be distinguished by session. It ultimately depends on the nature of your data and the specific requirements of your analysis. If you have a session_id attribute in your data, use a "Session ID" radio button to identify this column in the "Dataset" tab.
