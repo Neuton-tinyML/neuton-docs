@@ -93,6 +93,12 @@ Measures the change in frequency—i.e., how the shape of the signal evolves. Th
 ### Hjorth Mobility
 Measures the mean frequency or the rate of change of a signal, tells how fast the signal changes. This is defined as the square root of variance of the first derivative of the signal y(t) divided by variance of the signal y(t). In the robotic area, the Hjorth parameters are used for tactile signal processing for the physical object properties detection such as surface textures/material detection and touch modality classification via artificial robotic skin.
 
+### Linear Regression Slope
+In linear regression, the slope represents the change in the dependent variable (y) for every one-unit increase in the independent variable (x).
+
+### Linear Regression Intercept
+In linear regression, the intercept is the value of the dependent variable (y) when all independent variables (x) are set to zero.
+
 ## Frequency-domain features
 These functions use Fast Fourier transform to calculate the frequency of peaks and their power. If frequency features are selected, the window size should be equal to the power of 2. If Frequency domain features are selected (at least one), then the window size must be: >= 128 samples, <= 2048 samples, equal to the power of 2.
 
