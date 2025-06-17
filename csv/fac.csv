@@ -111,3 +111,4 @@ What is the typical model training time compared to traditional ML platforms?,Tr
 Are there benchmarks available comparing Neuton’s performance to other AutoML tools?,Neuton.ai benchmarks are available here: https://neuton.ai/frmwrk
 Is there GPU support for faster training?,Neuton automatically configures the required training infrastructure subject to the dataset size and complexity. If required, the platform automatically provisions GPU(s).
 Can Neuton models be updated incrementally (online learning)?,If you want to update the model with new data, you need to create a new solution and train the model again.
+where to find how much I will be charged for the training?,It is absoluytely free! Enjoy.
